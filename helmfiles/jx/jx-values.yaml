@@ -22,6 +22,7 @@ jxRequirements:
   cluster:
     chartRepository: http://bucketrepo.jx/bucketrepo/charts
     clusterName: kind
+    environmentGitOwner: k-von
     gitKind: github
     gitName: github
     gitServer: https://github.com
@@ -29,13 +30,15 @@ jxRequirements:
     registry: ghcr.io
   environments:
   - ingress:
-      domain: ""
+      domain: crc.testing
       namespaceSubDomain: ""
       tls:
         email: ""
         enabled: false
         production: false
     key: dev
+    owner: k-von
+    repository: jx3-openshift-crc
   - ingress:
       domain: ""
       namespaceSubDomain: ""
@@ -60,6 +63,8 @@ jxRequirements:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: --token
   repository: bucketrepo
   secretStorage: local
   vault: {}
