@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: kayvon-php-helloworld
     - name: php-ks-hello-world
     scheduler: in-repo
   slack:
