@@ -15,7 +15,7 @@ spec:
     registry: ghcr.io
   environments:
   - ingress:
-      domain: apps-crc.testing 
+      domain: apps-crc.testing
       namespaceSubDomain: ""
       tls:
         email: ""
