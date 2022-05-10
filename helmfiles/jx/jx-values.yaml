@@ -30,7 +30,7 @@ jxRequirements:
     registry: ghcr.io
   environments:
   - ingress:
-      domain: crc.testing
+      domain: apps-crc.testing
       namespaceSubDomain: ""
       tls:
         email: ""
